@@ -1,0 +1,65 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  6.11.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "cefc-ui-cell",
+    "version": "0.0.2",
+    "description": "CEFC-UI Component",
+    "main": "build/index.js",
+    "scripts": {
+      "build": "node_modules/.bin/tools run build",
+      "server": "node_modules/.bin/tools run server",
+      "lint": "node_modules/.bin/tools run lint"
+    },
+    "repository": {
+      "type": "git"
+    },
+    "author": "Kane",
+    "license": "ISC",
+    "dependencies": {
+      "bable-loader": "0.0.1-security",
+      "cefc-ui-style": "~0.0.1",
+      "classnames": "~2.2.5",
+      "prop-types": "~15.6.0",
+      "react": "~16.1.1",
+      "react-dom": "~16.1.1"
+    },
+    "devDependencies": {
+      "cefc-tools": "~0.0.4",
+      "cefc-utils": "~0.0.2"
+    },
+    "theme": "node_modules/cefc-ui-style/src/themes/default.less"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.32.tgz: Request failed "503 Service Unavailable"
+      at Request.handleRequestError (/usr/local/lib/node_modules/yarn/lib/fetchers/tarball-fetcher.js:203:20)
+      at emitOne (events.js:96:13)
+      at Request.emit (events.js:188:7)
+      at Request.onRequestResponse (/usr/local/lib/node_modules/yarn/node_modules/request/request.js:1074:10)
+      at emitOne (events.js:96:13)
+      at ClientRequest.emit (events.js:188:7)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:473:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:99:23)
+      at TLSSocket.socketOnData (_http_client.js:362:20)
+      at emitOne (events.js:96:13)
+      at TLSSocket.emit (events.js:188:7)
